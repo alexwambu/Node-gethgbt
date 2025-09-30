@@ -22,7 +22,6 @@ COPY genesis.json /app/genesis.json
 COPY signer.key /app/signer.key
 COPY password.txt /app/password.txt
 COPY entrypoint.sh /app/entrypoint.sh
-COPY env.txt/app/env.txt
 RUN chmod +x /app/entrypoint.sh
 
 EXPOSE 9636 30303 30303/udp
